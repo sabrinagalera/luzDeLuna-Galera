@@ -277,7 +277,7 @@ section#card6 {
 }
 section#index_button {
     grid-area: index_button;
-    background: url('media/index_fondo.jpg') no-repeat center/cover;
+    background: url('../media/index_fondo.jpg') no-repeat center/cover;
     background-attachment: fixed;
     position: relative;
     z-index: 0;
@@ -434,7 +434,7 @@ section#index_button {
 }
 nav#nav_img {
     grid-area: nav_img;
-    background: url('media/nav_img.jpg');
+    background: url('../media/nav_img.jpg');
     background-size: contain ;
     background-attachment: fixed;
     position:relative;   
@@ -444,27 +444,27 @@ section#exclusivas {
 } 
 section#promo1 {
     grid-area: promo1;
-    background: url('media/promo5.jpg') no-repeat center/cover; 
+    background: url('../media/promo5.jpg') no-repeat center/cover; 
 } 
 
 section#promo2 {
     grid-area: promo2;
-    background: url('media/promo1.jpg') no-repeat center/cover;
+    background: url('../media/promo1.jpg') no-repeat center/cover;
 } 
 section#descuentos {
     grid-area: descuentos;
 } 
 section#desc1 {
     grid-area: desc1;
-    background: url('media/promo2.jpg') no-repeat center/cover;
+    background: url('../media/promo2.jpg') no-repeat center/cover;
 } 
 section#desc2 {
     grid-area: desc2;
-    background: url('media/promo3.jpg') no-repeat center/cover;
+    background: url('../media/promo3.jpg') no-repeat center/cover;
 } 
 section#desc3 {
     grid-area: desc3;
-    background: url('media/promo4.jpg') no-repeat center/cover;
+    background: url('../media/promo4.jpg') no-repeat center/cover;
 } 
 
 /* CONTACTO */
@@ -472,7 +472,7 @@ section#desc3 {
 
 .contacto {
     height: 100vh;
-    background: url('media/contacto_fondo2.jpg') no-repeat center/cover;
+    background: url('../media/contacto_fondo2.jpg') no-repeat center/cover;
     background-attachment: fixed;
     position: relative;
     margin-top: 0;
