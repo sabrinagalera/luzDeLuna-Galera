@@ -82,20 +82,7 @@ li {
 header a:hover {
     color: #cac4b1;
 }
-ul ul {
-    position: absolute;
-    display: none;
-}
-ul ul li {
-    display: block;
-    background-color:black;
-    padding: 1.2em;
-    width: initial;
 
-}
-ul li:hover ul {
-    display:block;
-}
  
  
 
@@ -153,7 +140,6 @@ footer a:hover, footer .iconify:hover {
     color: #faf5e4;
     margin:1em;
 }
-
 .footer_logo img {
     width: 100%;
     margin:auto;
@@ -161,7 +147,6 @@ footer a:hover, footer .iconify:hover {
     border: solid .5px #faf5e4;
     border-radius: .3em;
 }
-
 
 /* INDEX */
 
