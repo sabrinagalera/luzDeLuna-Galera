@@ -1,0 +1,188 @@
+.container-fluid {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ESTILO BOTONES */
+
+.button1 {
+    width:fit-content;
+    padding:.75em 1.5em;
+    border-radius: .3em;
+    font-weight:500;
+    font-size: 1rem;
+    background-color: #434b53;
+    opacity: 0.6;
+    border: .8px solid #faf5e4;
+    color: #faf5e4;
+}
+.button1:hover {
+    background-color:#75818caf;
+    text-decoration: none;
+    color: #faf5e4;
+}
+.button2 {
+    width:fit-content;
+    padding:.75em 1em;
+    border-radius: .3em;
+    font-weight:500;
+    font-size: 1rem;
+    background-color: #faf5e4;
+    border: .8px solid #bfbfbd;
+    color: #434b53;
+}
+ .button2:hover {
+    background-color: #cac4b1;
+    text-decoration: none;
+    color: #434b53;
+}
+
+/* ESTILO HEADER */
+
+header {
+    background-color: #434b53; 
+    z-index: 1;
+    opacity: 0.6;
+    position: fixed;
+    width: 100vw;
+}   
+header img {
+    top:0;
+}
+li {
+    display: inline-block;
+    width:fit-content;
+    padding-left: 3em;
+    position:relative;
+    font-size: 14px;
+}
+header a:hover {
+    color: #cac4b1;
+}
+
+
+/* ESTILO FOOTER*/
+
+.footer_box {
+    
+    background-color: #434b53;
+    justify-content: space-evenly;
+    position: relative;
+    bottom:0;
+}
+.footer_li {
+    display: block;
+    color: #faf5e4;
+    letter-spacing: 0.1em;
+    text-align: left;
+    text-decoration: none;
+}
+footer li {
+    display:block
+}
+footer h3 {
+    color: #faf5e4;
+    font-size: 1.2em;
+    padding-bottom: 0.8em;  
+}
+footer p {
+    display: block;
+    background-color: #434b53;
+    font-size: .8em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+footer a:hover, footer .iconify:hover {
+    color: #cac4b1;
+}
+.footer_map, .footer_social, .footer_logo {
+    width: 32%;
+}
+
+.footer_social {
+    justify-content: space-between;
+}
+.iconify {
+    width: 50px; 
+    height: 50px; 
+    color: #faf5e4;
+    margin:1em;
+}
+footer .img-fluid {
+    width: 80%;
+}
+/* ESTILO HERO */
+
+.hero {
+    height: 100vh;
+    background: url('../media/hero-stairs-4.jpeg') no-repeat center/cover;
+    background-attachment: fixed;
+    position: relative;
+    margin-top: 0;
+    z-index: 0;
+}
+.hero:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.1);
+}
+.hero_title {
+    height: 400px;
+    position:absolute;
+    top: 30%;
+    right:10%;
+    margin:auto;
+}
+.hero_title h1 {
+    color:white;
+    font-weight: 500;
+    font-size: 5vw;
+    margin-bottom: 20px;
+}
+.hero_title p {
+    color:white;
+    font-weight: 300;
+    font-size: 2vw;
+    text-align: right;
+}
+.hero_links {
+    display:flex;
+    position: absolute;
+    top: 55%;
+    right:0;
+}
+.hero_links .button1 {
+    display:inline-block;
+    margin-right: 2em;    
+}
+.hero_links .button2 {
+    display:inline-block;
+}
+
+/* ESTILO INDEX */
+
+#index_sub1 h2 {
+    padding: 2em;
+    text-align: center;
+    color: #434b53;
+}
+
+#index_sub2 h2 {
+    padding: 2em;
+    text-align: center;
+    color: #434b53;
+}
+#index_button {
+    margin-top: 4em;
+    height: 60vh;
+    background: url('../media/index_fondo.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+
+    align-items: center;
+    text-align: center;
+}
