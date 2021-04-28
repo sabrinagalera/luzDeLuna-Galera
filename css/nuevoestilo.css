@@ -1,7 +1,41 @@
 .container-fluid {
     font-family: 'Montserrat', sans-serif;
+    
+
+}
+#index .container-general {
+    background: url('../media/kelly-sikkema-hUjm79CDsNc-unsplash.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    position: relative;
+    margin-top: 0;
+    z-index: 0;
+} 
+#index .container-general::before {
+    content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.1);
 }
 
+#contacto .container-general {
+    background: url('../media/contacto_fondo2.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    position: relative;
+    margin-top: 0;
+    z-index: 0;
+}  
+#contacto .container-general::before {
+    content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
 /* ESTILO BOTONES */
 
 .button1 {
@@ -10,15 +44,15 @@
     border-radius: .3em;
     font-weight:500;
     font-size: 1rem;
-    background-color: #434b53;
-    opacity: 0.6;
-    border: .8px solid #faf5e4;
-    color: #faf5e4;
+    background-color: black;
+    border: solid 2px white;
+    color: white;
 }
 .button1:hover {
-    background-color:#75818caf;
+    background-color:gray;
     text-decoration: none;
-    color: #faf5e4;
+    font-weight: 800;
+    color: white;
 }
 .button2 {
     width:fit-content;
@@ -26,95 +60,99 @@
     border-radius: .3em;
     font-weight:500;
     font-size: 1rem;
-    background-color: #faf5e4;
-    border: .8px solid #bfbfbd;
-    color: #434b53;
+    background-color: white;
+    border:solid 2px  black;
+    color: black;
 }
  .button2:hover {
-    background-color: #cac4b1;
+    background-color: silver;
     text-decoration: none;
-    color: #434b53;
+    font-weight: 800;
+    color: black;
 }
 
 /* ESTILO HEADER */
 
-header {
-    background-color: #434b53; 
-    z-index: 1;
-    opacity: 0.6;
-    position: fixed;
-    width: 100vw;
-}   
+  
 header img {
     top:0;
+    width: 10em;
 }
 li {
     display: inline-block;
     width:fit-content;
-    padding-left: 3em;
+    padding-left: 2em;
     position:relative;
-    font-size: 14px;
+    font-size: 12px;
 }
-header a:hover {
-    color: #cac4b1;
+.navbar {
+    background-color: black;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+    letter-spacing: 0.3em;
+    color: white;
+}
 
 /* ESTILO FOOTER*/
 
 .footer_box {
     
-    background-color: #434b53;
-    justify-content: space-evenly;
-    position: relative;
-    bottom:0;
+    background-color: black;
+    
 }
 .footer_li {
-    display: block;
-    color: #faf5e4;
+    color: whitesmoke;
     letter-spacing: 0.1em;
-    text-align: left;
     text-decoration: none;
+    font-size: .8em;
+    padding-left: 0;
+}
+footer ul {
+    padding-left: 0;
 }
 footer li {
-    display:block
+    display:block;
+    margin: auto;
+    padding-left: 0;
+    
 }
 footer h3 {
-    color: #faf5e4;
+    text-align: center;
+    color: whitesmoke;
     font-size: 1.2em;
     padding-bottom: 0.8em;  
 }
-footer p {
-    display: block;
-    background-color: #434b53;
-    font-size: .8em;
-    text-align: center;
-    padding-bottom: 1em;
-}
+
 footer a:hover, footer .iconify:hover {
     color: #cac4b1;
-}
-.footer_map, .footer_social, .footer_logo {
-    width: 32%;
+    text-decoration: none;
 }
 
 .footer_social {
-    justify-content: space-between;
+    text-align: center;
 }
+
 .iconify {
     width: 50px; 
     height: 50px; 
-    color: #faf5e4;
-    margin:1em;
+    color: whitesmoke;
+    margin: 1em;
+    text-align: center;
+
 }
 footer .img-fluid {
-    width: 80%;
+    width: 70%;
+    border: solid whitesmoke;
+}
+.footer_logo {
+    text-align: center;
 }
 /* ESTILO HERO */
 
 .hero {
     height: 100vh;
-    background: url('../media/hero-stairs-4.jpeg') no-repeat center/cover;
+    background: url('../media/kelly-sikkema-hUjm79CDsNc-unsplash.jpg') no-repeat center/cover;
     background-attachment: fixed;
     position: relative;
     margin-top: 0;
@@ -151,7 +189,6 @@ footer .img-fluid {
 .hero_links {
     display:flex;
     position: absolute;
-    top: 55%;
     right:0;
 }
 .hero_links .button1 {
@@ -164,25 +201,28 @@ footer .img-fluid {
 
 /* ESTILO INDEX */
 
-#index_sub1 h2 {
-    padding: 2em;
-    text-align: center;
-    color: #434b53;
+.container-carousel{
+    background-color: rgb(255, 255, 255);
 }
-
-#index_sub2 h2 {
-    padding: 2em;
+#index .card {
+    border-radius: 1%;
+    color: white;
+    background-color: black;
     text-align: center;
-    color: #434b53;
+    
 }
 #index_button {
-    margin-top: 4em;
     height: 60vh;
-    background: url('../media/index_fondo.jpg') no-repeat center/cover;
-    background-attachment: fixed;
     position: relative;
-    z-index: 0;
-
     align-items: center;
     text-align: center;
+}
+
+/* ESTILO CONTACTO */
+#contacto form, #contacto  .info {
+    margin: 50% 20%;
+    padding: 5%;
+    border: 2px solid white;
+    border-radius: 1%;
+    color:white
 }
