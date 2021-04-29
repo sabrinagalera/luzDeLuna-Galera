@@ -1,3 +1,4 @@
+
 .container-fluid {
     font-family: 'Montserrat', sans-serif;
     
@@ -19,13 +20,64 @@
 	right: 0;
 	background-color: rgba(0,0,0,0.1);
 }
-
-#contacto .container-general {
-    background: url('../media/contacto_fondo2.jpg') no-repeat center/cover;
+#sobrenosotros .container-general {
+    background: url('../media/carousel2.jpg') no-repeat center/cover;
     background-attachment: fixed;
     position: relative;
     margin-top: 0;
     z-index: 0;
+} 
+#sobrenosotros .container-general::before {
+    content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.3);
+}
+#productos .container-general {
+    background: url('../media/kelly-sikkema-ClsLegwrCQQ-unsplash.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    position: relative;
+    margin-top: 0;
+    z-index: 0;
+    padding-top: 6em;
+    padding-right: 2em;   
+}  
+#productos .container-general::before {
+    content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+#promociones .container-general {
+    background: url('../media/fondo_promo.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    position: relative;
+    margin-top: 0;
+    z-index: 0;
+} 
+#promociones .container-general::before {
+    content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.1);
+}
+#contacto .container-general {
+    background: url('../media/contacto_fondo1.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    position: relative;
+    margin-top: 0;
+    z-index: 0;
+    padding-top: 6em;
+    padding-right: 2em;
 }  
 #contacto .container-general::before {
     content:'';
@@ -36,6 +88,8 @@
 	right: 0;
 	background-color: rgba(0,0,0,0.6);
 }
+
+
 /* ESTILO BOTONES */
 
 .button1 {
@@ -172,6 +226,7 @@ footer .img-fluid {
     position:absolute;
     top: 30%;
     right:10%;
+    text-align: right;
     margin:auto;
 }
 .hero_title h1 {
@@ -184,25 +239,16 @@ footer .img-fluid {
     color:white;
     font-weight: 300;
     font-size: 2vw;
-    text-align: right;
 }
-.hero_links {
-    display:flex;
-    position: absolute;
-    right:0;
-}
-.hero_links .button1 {
-    display:inline-block;
-    margin-right: 2em;    
-}
-.hero_links .button2 {
-    display:inline-block;
+.hero_title a {
+    margin-bottom: 1em;
 }
 
 /* ESTILO INDEX */
 
 .container-carousel{
     background-color: rgb(255, 255, 255);
+    padding: 10% 5%;
 }
 #index .card {
     border-radius: 1%;
@@ -218,9 +264,50 @@ footer .img-fluid {
     text-align: center;
 }
 
+
+/* ESTILO PRODUCTOS */
+
+#productos .card {
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border: 0.5px solid white;
+    min-width: 13em;
+    padding-bottom: 3em;
+}
+
+/* ESTILO SOBRE NOSOTROS */
+
+.card_one {
+
+    color:white;
+    background-color: black;
+    text-align: justify;
+    border: 1px solid white;
+}
+.card-header {
+    font-size: 10px;
+}
+
+/* ESTILO PROMOCIONES */
+
+.card_promo1 {
+    margin-top: 8em;
+    text-align: center;
+    color: white;
+    background-color: #ffffff1c;
+    border: 1px solid white;
+}
+.card_promo2 {
+    color: white;
+    background-color: black;
+    padding: .5em;
+}
+
 /* ESTILO CONTACTO */
 #contacto form, #contacto  .info {
-    margin: 50% 20%;
+    margin: 3em 3em 3em 3em;
+    margin-top: 3em;
     padding: 5%;
     border: 2px solid white;
     border-radius: 1%;
