@@ -2,7 +2,6 @@
 .container-fluid {
     font-family: 'Montserrat', sans-serif;
     
-
 }
 #index .container-general {
     background: url('../media/kelly-sikkema-hUjm79CDsNc-unsplash.jpg') no-repeat center/cover;
@@ -127,7 +126,9 @@
 
 /* ESTILO HEADER */
 
-  
+header {
+    text-transform: uppercase;
+}  
 header img {
     top:0;
     width: 10em;
@@ -150,6 +151,9 @@ li {
 
 /* ESTILO FOOTER*/
 
+footer {
+    text-transform: uppercase;
+} 
 .footer_box {
     
     background-color: black;
@@ -257,6 +261,9 @@ footer .img-fluid {
     text-align: center;
     
 }
+.card-title {
+    text-transform: uppercase;
+}
 #index_button {
     height: 60vh;
     position: relative;
@@ -288,7 +295,9 @@ footer .img-fluid {
 .card-header {
     font-size: 10px;
 }
-
+.card-title {
+    text-transform: uppercase;
+}
 /* ESTILO PROMOCIONES */
 
 .card_promo1 {
