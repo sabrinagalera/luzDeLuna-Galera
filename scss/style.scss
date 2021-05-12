@@ -1,45 +1,43 @@
 @import "reseñas";
-@import "contacto";
-
-
-
 
 .container-fluid {
-    font-family: 'Montserrat', sans-serif;
-    
+    font-family: 'Montserrat', sans-serif; 
 }
+
+/* ESTILOS DE FONDO */ 
+
 #index .container-general {
     background: url('../media/kelly-sikkema-hUjm79CDsNc-unsplash.jpg') no-repeat center/cover;
     background-attachment: fixed;
     position: relative;
     margin-top: 0;
     z-index: 0;
+    &::before {
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.1);
+    }
 } 
-#index .container-general::before {
-    content:'';
-	position: absolute;
-    top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(0,0,0,0.1);
-}
 #sobrenosotros .container-general {
     background: url('../media/carousel2.jpg') no-repeat center/cover;
     background-attachment: fixed;
     position: relative;
     margin-top: 0;
     z-index: 0;
+    &::before {
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.3);    
+    }
 } 
-#sobrenosotros .container-general::before {
-    content:'';
-	position: absolute;
-    top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(0,0,0,0.3);
-}
 #productos .container-general {
     background: url('../media/kelly-sikkema-ClsLegwrCQQ-unsplash.jpg') no-repeat center/cover;
     background-attachment: fixed;
@@ -47,33 +45,33 @@
     margin-top: 0;
     z-index: 0;
     padding-top: 6em;
-    padding-right: 2em;   
+    padding-right: 2em; 
+    &::before {
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.6);    
+    }  
 }  
-#productos .container-general::before {
-    content:'';
-	position: absolute;
-    top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(0,0,0,0.6);
-}
 #promociones .container-general {
     background: url('../media/fondo_promo.jpg') no-repeat center/cover;
     background-attachment: fixed;
     position: relative;
     margin-top: 0;
     z-index: 0;
+    &::before {
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.1);    
+    }
 } 
-#promociones .container-general::before {
-    content:'';
-	position: absolute;
-    top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(0,0,0,0.1);
-}
 #contacto .container-general {
     background: url('../media/contacto_fondo1.jpg') no-repeat center/cover;
     background-attachment: fixed;
@@ -82,73 +80,70 @@
     z-index: 0;
     padding-top: 6em;
     padding-right: 2em;
+    &::before {
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.6);    
+    }
 }  
-#contacto .container-general::before {
-    content:'';
-	position: absolute;
-    top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(0,0,0,0.6);
-}
-
 
 /* ESTILO BOTONES */
 
-.button1 {
+.button {
     width:fit-content;
     padding:.75em 1.5em;
     border-radius: .3em;
     font-weight:500;
     font-size: 1rem;
+}
+.button__black {
+    @extend .button; 
     background-color: black;
     border: solid 2px white;
     color: white;
-}
-.button1:hover {
-    background-color:gray;
+    &:hover {
+        background-color:gray;
     text-decoration: none;
     font-weight: 800;
     color: white;
+    }
 }
-.button2 {
-    width:fit-content;
-    padding:.75em 1em;
-    border-radius: .3em;
-    font-weight:500;
-    font-size: 1rem;
+.button__white {
+    @extend .button;
     background-color: white;
     border:solid 2px  black;
     color: black;
-}
- .button2:hover {
-    background-color: silver;
+    &:hover {
+        background-color: silver;
     text-decoration: none;
     font-weight: 800;
     color: black;
+    }
 }
 
 /* ESTILO HEADER */
 
 header {
     text-transform: uppercase;
+    img {
+        top:0;
+        width: 10em;
+    }
+    li {
+        display: inline-block;
+        width:fit-content;
+        padding-left: 2em;
+        position:relative;
+        font-size: 12px;
+    }
+    .navbar {
+        background-color: black;
+    }
 }  
-header img {
-    top:0;
-    width: 10em;
-}
-li {
-    display: inline-block;
-    width:fit-content;
-    padding-left: 2em;
-    position:relative;
-    font-size: 12px;
-}
-.navbar {
-    background-color: black;
-}
-
 .navbar-dark .navbar-nav .nav-link {
     letter-spacing: 0.3em;
     color: white;
@@ -158,59 +153,58 @@ li {
 
 footer {
     text-transform: uppercase;
+    .footer__box {
+        background-color: black;
+        h3 {
+            text-align: center;
+            color: whitesmoke;
+            font-size: 1em;
+            padding-bottom: 0.8em;  
+        }
+        .footer__box--map {
+            ul {
+                padding-left: 0; 
+                text-align: center;
+                li {
+                    display:block;
+                    padding-left: 0; 
+                    a {
+                        color: whitesmoke;
+                        letter-spacing: 0.1em;
+                        text-decoration: none;
+                        font-size: .6em;
+                        &:hover {
+                            color: #cac4b1;
+                            text-decoration: none;
+                        }  
+                    }   
+                }
+            }    
+        }
+        .footer__box--social {
+            text-align: center;
+            .iconify {
+                width: 50px; 
+                height: 50px; 
+                color: whitesmoke;
+                margin: 1em;
+                text-align: center;
+                &:hover {
+                    color: #cac4b1;
+                    text-decoration: none; 
+                } 
+            }
+        }
+        .footer__box--logo {
+            text-align: center;
+            .img-fluid {
+                width: 70%;
+                border: solid whitesmoke;
+            }
+        }
+    }
 } 
-.footer_box {
-    
-    background-color: black;
-    
-}
-.footer_li {
-    color: whitesmoke;
-    letter-spacing: 0.1em;
-    text-decoration: none;
-    font-size: .8em;
-    padding-left: 0;
-}
-footer ul {
-    padding-left: 0;
-}
-footer li {
-    display:block;
-    margin: auto;
-    padding-left: 0;
-    
-}
-footer h3 {
-    text-align: center;
-    color: whitesmoke;
-    font-size: 1.2em;
-    padding-bottom: 0.8em;  
-}
 
-footer a:hover, footer .iconify:hover {
-    color: #cac4b1;
-    text-decoration: none;
-}
-
-.footer_social {
-    text-align: center;
-}
-
-.iconify {
-    width: 50px; 
-    height: 50px; 
-    color: whitesmoke;
-    margin: 1em;
-    text-align: center;
-
-}
-footer .img-fluid {
-    width: 70%;
-    border: solid whitesmoke;
-}
-.footer_logo {
-    text-align: center;
-}
 /* ESTILO HERO */
 
 .hero {
@@ -220,37 +214,37 @@ footer .img-fluid {
     position: relative;
     margin-top: 0;
     z-index: 0;
-}
-.hero:before {
-	content:'';
-	position: absolute;
-    top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(0,0,0,0.1);
-}
-.hero_title {
-    height: 400px;
-    position:absolute;
-    top: 30%;
-    right:10%;
-    text-align: right;
-    margin:auto;
-}
-.hero_title h1 {
-    color:white;
-    font-weight: 500;
-    font-size: 5vw;
-    margin-bottom: 20px;
-}
-.hero_title p {
-    color:white;
-    font-weight: 300;
-    font-size: 2vw;
-}
-.hero_title a {
-    margin-bottom: 1em;
+    &::before {
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.1);
+    }
+    .hero_title {
+        height: 400px;
+        position:absolute;
+        top: 30%;
+        right:10%;
+        text-align: right;
+        margin:auto;
+        h1 {
+            color:white;
+            font-weight: 500;
+            font-size: 5vw;
+            margin-bottom: 20px; 
+        }
+        p {
+            color:white;
+            font-weight: 300;
+            font-size: 2vw;
+        }
+        a {
+            margin-bottom: 1em;
+        }
+    }
 }
 
 /* ESTILO INDEX */
@@ -264,10 +258,16 @@ footer .img-fluid {
     color: white;
     background-color: black;
     text-align: center;
-    
-}
-.card-title {
-    text-transform: uppercase;
+    .card-title {
+        text-transform: uppercase;
+    }
+    .carta__titulo {
+        color:whitesmoke;
+    }   
+    .carta__titulo--fina {
+        @extend .carta__titulo;
+        font-weight: 100;
+    }       
 }
 #index_button {
     height: 60vh;
@@ -275,14 +275,26 @@ footer .img-fluid {
     align-items: center;
     text-align: center;
 }
-.carta__titulo {
-    color:whitesmoke;
-}
 
-.carta__titulo--fina {
-    @extend .carta__titulo;
-    font-weight: 100;
+/* ESTILO SOBRE NOSOTROS */
+
+.card_one {
+
+    color:white;
+    background-color: black;
+    text-align: justify;
+    border: 1px solid white;
+    .card-header {
+        font-size: 10px;
+    }
+    .card-title {
+        text-transform: uppercase;
+    }  
 }
+.reseñas {
+        background-color: $background-res;
+        height: $alto+3em;
+    }
 
 /* ESTILO PRODUCTOS */
 
@@ -295,26 +307,6 @@ footer .img-fluid {
     padding-bottom: 3em;
 }
 
-/* ESTILO SOBRE NOSOTROS */
-
-.card_one {
-
-    color:white;
-    background-color: black;
-    text-align: justify;
-    border: 1px solid white;
-}
-.card-header {
-    font-size: 10px;
-}
-.reseñas {
-    background-color: $background-res;
-    height: $alto+3em;
-}
-
-.card-title {
-    text-transform: uppercase;
-}
 /* ESTILO PROMOCIONES */
 
 .card_promo1 {
@@ -331,20 +323,16 @@ footer .img-fluid {
 }
 
 /* ESTILO CONTACTO */
-#contacto form, #contacto  .info {
-    margin: 3em 3em 3em 3em;
-    margin-top: 3em;
-    padding: 5%;
-    border: 2px solid white;
-    border-radius: 1%;
-    color:white
-}
 
 @mixin colors ($color, $background-color) {
     color: $color;
     background-color:$background-color ;
 }
-
-.info {
-    @include colors(whitesmoke, rgba(245, 245, 245, 0.463));
+#contacto form, #contacto .info {
+    margin: 3em 3em 3em 3em;
+    margin-top: 3em;
+    padding: 5%;
+    border: 2px solid white;
+    border-radius: 1%;
+    @include colors(whitesmoke, $background-res);
 }
