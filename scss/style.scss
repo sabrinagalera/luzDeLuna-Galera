@@ -7,7 +7,7 @@
 /* ESTILOS DE FONDO */ 
 
 #index .container-general {
-    background: url('../media/kelly-sikkema-hUjm79CDsNc-unsplash.jpg') no-repeat center/cover;
+    background: url('../media/fondo_index.webp') no-repeat center/cover;
     background-attachment: fixed;
     position: relative;
     margin-top: 0;
@@ -23,7 +23,7 @@
     }
 } 
 #sobrenosotros .container-general {
-    background: url('../media/carousel2.jpg') no-repeat center/cover;
+    background: url('../media/fondo_sobrenosotros.webp') no-repeat center/cover;
     background-attachment: fixed;
     position: relative;
     margin-top: 0;
@@ -39,7 +39,7 @@
     }
 } 
 #productos .container-general {
-    background: url('../media/kelly-sikkema-ClsLegwrCQQ-unsplash.jpg') no-repeat center/cover;
+    background: url('../media/fondo_productos.webp') no-repeat center/cover;
     background-attachment: fixed;
     position: relative;
     margin-top: 0;
@@ -57,7 +57,7 @@
     }  
 }  
 #promociones .container-general {
-    background: url('../media/fondo_promo.jpg') no-repeat center/cover;
+    background: url('../media/fondo_promo.webp') no-repeat center/cover;
     background-attachment: fixed;
     position: relative;
     margin-top: 0;
@@ -73,7 +73,7 @@
     }
 } 
 #contacto .container-general {
-    background: url('../media/contacto_fondo1.jpg') no-repeat center/cover;
+    background: url('../media/contacto_fondo.webp') no-repeat center/cover;
     background-attachment: fixed;
     position: relative;
     margin-top: 0;
@@ -209,7 +209,7 @@ footer {
 
 .hero {
     height: 100vh;
-    background: url('../media/kelly-sikkema-hUjm79CDsNc-unsplash.jpg') no-repeat center/cover;
+    background: url('../media/fondo_index.webp') no-repeat center/cover;
     background-attachment: fixed;
     position: relative;
     margin-top: 0;
@@ -313,7 +313,7 @@ footer {
     margin-top: 8em;
     text-align: center;
     color: white;
-    background-color: #ffffff1c;
+    background-color: $background-res;
     border: 1px solid white;
 }
 .card_promo2 {
