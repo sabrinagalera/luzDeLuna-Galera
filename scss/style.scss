@@ -292,6 +292,7 @@ footer {
     }  
 }
 .reseñas {
+        height: fit-content !important;
         background-color: $background-res;
         height: $alto+3em;
     }
