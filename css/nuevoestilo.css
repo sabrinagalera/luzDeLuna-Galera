@@ -240,9 +240,8 @@ footer {
     text-transform: uppercase; }
 
 .reseñas {
-  height: fit-content !important;
-  background-color: rgba(255, 255, 255, 0.089);
-  height: 13em; }
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.089); }
 
 /* ESTILO PRODUCTOS */
 #productos .card {

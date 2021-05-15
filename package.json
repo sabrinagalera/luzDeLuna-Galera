@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/sabrinagalera/luzDeLuna-Galera.git"
   },
-  "author": "",
+  "author": "sabrina galera",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sabrinagalera/luzDeLuna-Galera/issues"
@@ -19,8 +19,9 @@
   "homepage": "https://github.com/sabrinagalera/luzDeLuna-Galera#readme",
   "devDependencies": {
     "node-sass": "^5.0.0",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "Bootstrap": "^4.6.0"
   },
   "dependencies": {},
-  "description": ""
+  "description": "Proyecto final del curso Desarrollo Web de Coderhouse"
 }
