@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Variables para el color principal, secundario y para algunos bloques con transparencia */
 .container-fluid {
   font-family: 'Montserrat', sans-serif; }
 
@@ -102,7 +103,7 @@
 
 .button__white {
   background-color: white;
-  border: solid 2px  black;
+  border: solid 2px black;
   color: black; }
   .button__white:hover {
     background-color: silver;
@@ -207,7 +208,7 @@ footer {
 
 /* ESTILO INDEX */
 .container-carousel {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
   padding: 10% 5%; }
 
 #index .card {
@@ -259,6 +260,8 @@ footer {
   color: white;
   background-color: rgba(255, 255, 255, 0.089);
   border: 1px solid white; }
+  .card_promo1 .card-text {
+    margin-bottom: 1.5em; }
 
 .card_promo2 {
   color: white;

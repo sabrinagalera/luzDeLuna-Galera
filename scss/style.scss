@@ -1,4 +1,4 @@
-@import "reseñas";
+@import "variables";
 
 .container-fluid {
     font-family: 'Montserrat', sans-serif; 
@@ -19,7 +19,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: rgba(0,0,0,0.1);
+        background-color: rgba($color1,0.1);
     }
 } 
 #sobrenosotros .container-general {
@@ -35,7 +35,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: rgba(0,0,0,0.3);    
+        background-color: rgba($color1,0.3);    
     }
 } 
 #productos .container-general {
@@ -53,7 +53,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: rgba(0,0,0,0.6);    
+        background-color: rgba($color1,0.6);    
     }  
 }  
 #promociones .container-general {
@@ -69,7 +69,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: rgba(0,0,0,0.1);    
+        background-color: rgba($color1,0.1);    
     }
 } 
 #contacto .container-general {
@@ -87,7 +87,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: rgba(0,0,0,0.6);    
+        background-color: rgba($color1,0.6);    
     }
 }  
 
@@ -102,26 +102,26 @@
 }
 .button__black {
     @extend .button; 
-    background-color: black;
-    border: solid 2px white;
-    color: white;
+    background-color: $color1;
+    border: solid 2px $color2;
+    color: $color2;
     &:hover {
         background-color:gray;
     text-decoration: none;
     font-weight: 800;
-    color: white;
+    color: $color2;
     }
 }
 .button__white {
     @extend .button;
-    background-color: white;
-    border:solid 2px  black;
-    color: black;
+    background-color: $color2;
+    border:solid 2px  $color1;
+    color: $color1;
     &:hover {
         background-color: silver;
     text-decoration: none;
     font-weight: 800;
-    color: black;
+    color: $color1;
     }
 }
 
@@ -141,12 +141,12 @@ header {
         font-size: 12px;
     }
     .navbar {
-        background-color: black;
+        background-color: $color1;
     }
 }  
 .navbar-dark .navbar-nav .nav-link {
     letter-spacing: 0.3em;
-    color: white;
+    color: $color2;
 }
 
 /* ESTILO FOOTER*/
@@ -154,7 +154,7 @@ header {
 footer {
     text-transform: uppercase;
     .footer__box {
-        background-color: black;
+        background-color: $color1;
         h3 {
             text-align: center;
             color: whitesmoke;
@@ -221,7 +221,7 @@ footer {
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: rgba(0,0,0,0.1);
+        background-color: rgba($color1,0.1);
     }
     .hero_title {
         height: 400px;
@@ -231,13 +231,13 @@ footer {
         text-align: right;
         margin:auto;
         h1 {
-            color:white;
+            color:$color2;
             font-weight: 500;
             font-size: 5vw;
             margin-bottom: 20px; 
         }
         p {
-            color:white;
+            color:$color2;
             font-weight: 300;
             font-size: 2vw;
         }
@@ -250,12 +250,13 @@ footer {
 /* ESTILO INDEX */
 
 .container-carousel{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba($color2,0.6);
     padding: 10% 5%;
+    
 }
 #index .card {
     border-radius: 1%;
-    color: white;
+    color: $color2;
     background-color: black;
     text-align: center;
     .card-title {
@@ -280,10 +281,10 @@ footer {
 
 .card_one {
 
-    color:white;
-    background-color: black;
+    color:$color2;
+    background-color: $color1;
     text-align: justify;
-    border: 1px solid white;
+    border: 1px solid $color2;
     .card-header {
         font-size: 10px;
     }
@@ -301,8 +302,8 @@ footer {
 #productos .card {
     text-align: center;
     background-color: transparent;
-    color: white;
-    border: 0.5px solid white;
+    color: $color2;
+    border: 0.5px solid $color2;
     min-width: 13em;
     padding-bottom: 3em;
 }
@@ -312,13 +313,16 @@ footer {
 .card_promo1 {
     margin-top: 8em;
     text-align: center;
-    color: white;
+    color: $color2;
     background-color: $background-res;
-    border: 1px solid white;
+    border: 1px solid $color2;
+    .card-text {
+        margin-bottom: 1.5em;
+    }
 }
 .card_promo2 {
-    color: white;
-    background-color: black;
+    color: $color2;
+    background-color: $color1;
     padding: .5em;
 }
 
@@ -332,7 +336,7 @@ footer {
     margin: 3em 3em 3em 3em;
     margin-top: 3em;
     padding: 5%;
-    border: 2px solid white;
+    border: 2px solid $color2;
     border-radius: 1%;
     @include colors(whitesmoke, $background-res);
 }
