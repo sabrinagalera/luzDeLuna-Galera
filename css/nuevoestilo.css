@@ -233,7 +233,6 @@ footer {
 .card_one {
   color: white;
   background-color: black;
-  text-align: justify;
   border: 1px solid white; }
   .card_one .card-header {
     font-size: 10px; }
